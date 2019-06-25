@@ -17,8 +17,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/yinyue"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             />
@@ -32,6 +32,11 @@
             />
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEBEB"
+        />
     <LinearLayout
         android:id="@+id/ll_zuijinbofang"
         android:layout_width="match_parent"
@@ -43,8 +48,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/zuijinbofang"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             />
@@ -58,6 +63,11 @@
             />
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEBEB"
+        />
     <LinearLayout
         android:id="@+id/ll_xiazaiguanli"
     android:layout_width="match_parent"
@@ -69,8 +79,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/xiazaiguanli"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         />
@@ -84,6 +94,11 @@
         />
 
 </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEBEB"
+        />
     <LinearLayout
         android:id="@+id/ll_wodediantai"
     android:layout_width="match_parent"
@@ -95,8 +110,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/diantai"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         />
@@ -110,6 +125,11 @@
         />
 
 </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEBEB"
+        />
     <LinearLayout
         android:id="@+id/ll_wodeshoucang"
         android:layout_width="match_parent"
@@ -121,8 +141,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/shoucang"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             />

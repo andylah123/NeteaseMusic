@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         //定义两个视图，两个视图都加载同一个布局list_view.xml
         View view1 = getLayoutInflater().inflate(R.layout.wode,null);
-        View view2 = getLayoutInflater().inflate(R.layout.page,null);
+        View view2 = getLayoutInflater().inflate(R.layout.faxian,null);
 
         //将两个视图添加到视图集合viewlist中
         viewlist.add(view1);

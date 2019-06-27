@@ -1,115 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
     >
 
+    
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        >
 
+
+
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/caidan"
+                />
 
             <github.chenupt.springindicator.SpringIndicator
                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                app:siTextSize="18sp"
+                app:siTextSize="10sp"
                 app:siTextColor="@color/colorPrimaryDark"
                 app:siSelectedTextColor="@android:color/white"
-                app:siIndicatorColor="@color/colorPrimary"
+                app:siIndicatorColor="@color/ccolor"
                 android:id="@+id/indicator"
                 android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_height="55dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                />
             />
 
-            <android.support.v4.view.ViewPager
-                android:id="@+id/vp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/chazhao"
+                android:layout_marginRight="30dp"
+                />
 
-            </android.support.v4.view.ViewPager>
+        </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#EEEBEB"
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:overScrollMode="ifContentScrolls"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEBEB"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/tubiao"
                 />
 
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="You need to calm down"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Taylor Swift"
+                    android:textSize="10dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 >
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/tubiao"
-                    />
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/bofang"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="5dp"
-                        android:text="You need to calm down"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginLeft="5dp"
-                        android:text="Taylor Swift"
-                        android:textSize="10dp"
-                        />
-
-                </LinearLayout>
-
-
-
-                <android.support.constraint.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    >
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/bofangliebiao"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="10dp"
-                        android:src="@drawable/bofang"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/imageView"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="10dp"
-                        android:src="@drawable/bofangliebiao"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </android.support.constraint.ConstraintLayout>
+            </android.support.constraint.ConstraintLayout>
 
 
 
-            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 
@@ -126,4 +171,7 @@
 
 
 
-</LinearLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -113,7 +113,7 @@
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/diantai"
+        android:src="@drawable/wodediantai"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="30dp"
@@ -167,5 +167,14 @@
         android:background="#D0F0EFEF">
     </View>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/chuangjiandegedan" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/shoucangdegedan" />
 
 </LinearLayout>

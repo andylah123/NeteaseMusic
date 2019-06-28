@@ -9,11 +9,21 @@
 
     
     <RelativeLayout
-        android:layout_width="300dp"
+        android:id="@+id/Re_left"
+        android:layout_width="400dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
+        android:background="#ffffff"
+
         >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/menu"></include>
+
+        </LinearLayout>
 
 
     </RelativeLayout>
@@ -31,6 +41,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/caidan"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
@@ -89,14 +100,15 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/tubiao"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/head"
                 />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
                 android:orientation="vertical"
                 >
 
@@ -112,7 +124,7 @@
                     android:layout_height="15dp"
                     android:layout_marginTop="3dp"
                     android:layout_marginLeft="5dp"
-                    android:text="Taylor Swift"
+                    android:text="梁安铧/Taylor Swift"
                     android:textSize="10dp"
                     />
 
